@@ -30,7 +30,9 @@
 }
 
 body {
-    min-height: 120vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     background-image: url(./images/bg-curvy-desktop.svg);
     background-position: bottom;
     background-repeat: no-repeat;
@@ -93,3 +95,49 @@ section {
     font-size: .7rem;
 }
 
+.start-container__button:hover {
+    cursor: pointer;
+}
+
+.middle-container {
+    display: flex;
+}
+
+.middle.container__features {
+    display: flex;
+    flex-direction: column;
+}
+
+.middle-container__boxes {
+    display: flex;
+    width: 200px;
+}
+
+.middle-container__team {
+    display: flex;
+    flex-direction: column;
+}
+
+.middle-container__productive {
+    
+}
+
+.middle-container__team-img {
+    display: flex;
+}
+
+.middle-container__team-text {
+    display: flex;
+}
+
+.middle-container__quotes {
+
+}
+
+.middle-container__quotes-quote {
+
+}
+
+.middle-container__sign-up {
+
+}
