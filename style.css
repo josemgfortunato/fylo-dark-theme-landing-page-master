@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+/* ### Primary Colors */
+
+--DarkBlue-intro-and-email-sign-up-background: hsl(217, 28%, 15%);
+--DarkBlue-main-background: hsl(218, 28%, 13%);
+--DarkBlue-footer-background: hsl(216, 53%, 9%);
+--DarkBlue-testimonials-background: hsl(219, 30%, 18%);
+
+/* ### Accent Colors */
+
+--CyanInside-call-to-action-gradient: hsl(176, 68%, 64%);
+--BlueInside-call-to-action-gradient: hsl(198, 60%, 50%);
+--LightRed-error: hsl(0, 100%, 63%);
+
+/* ### Neutral Colors */
+
+--White: hsl(0, 0%, 100%);
+
+}
+
+body {
+    min-height: 120vh;
+    background-image: url(./images/bg-curvy-desktop.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-color: var(--DarkBlue-intro-and-email-sign-up-background);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+header li {
+    display: inline;
+    padding: 1rem;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--White);
+
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+.start-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--White);
+    gap: 1.5rem;
+}
+
+.start-container__title {
+    width: 65%;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+}
+
+.start-container__text {
+    width: 45%;
+    text-align: center;
+}
+
+.start-container__button {
+    width: 12rem;
+    border: none;
+    padding: .7rem;
+    background: linear-gradient(45deg, var(--CyanInside-call-to-action-gradient), var(--BlueInside-call-to-action-gradient));
+    border-radius: 1rem;
+    color: var(--White);
+    font-size: .7rem;
+}
+
