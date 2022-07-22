@@ -94,30 +94,30 @@ section {
     gap: 1.5rem;
 }
 
-.start-container__illustration {
-    
-}
-
 .start-container__title {
-    width: 65%;
+    width: 50%;
     text-align: center;
     font-family: 'Raleway', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    line-height: 3.5rem;
 }
 
 .start-container__text {
-    width: 45%;
+    width: 35%;
     text-align: center;
+    font-size: 1.1rem;
+    font-weight: 400;
 }
 
 .start-container__button {
-    width: 12rem;
+    width: 15rem;
     border: none;
-    padding: .7rem;
+    padding: 1rem;
     background: linear-gradient(45deg, var(--CyanInside-call-to-action-gradient), var(--BlueInside-call-to-action-gradient));
-    border-radius: 1rem;
+    border-radius: 1.5rem;
     color: var(--White);
-    font-size: .7rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
 }
 
 .start-container__button:hover {
@@ -140,6 +140,7 @@ section {
     color: var(--White);
     text-align: center;
     align-items: center;
+    gap: 1rem;
 }
 
 .middle-container__features-boxes img {
@@ -171,6 +172,7 @@ section {
     justify-content: flex-end;
     color: var(--White);
     gap: 2rem;
+    padding: 3rem 0;
 }
 
 .middle-container__team-text h1{
@@ -182,6 +184,7 @@ section {
     background-image: url(./images/bg-quotes.png);
     background-repeat: no-repeat;
     gap: 2rem;
+    padding: 2rem;
 }
 
 .middle-container__quotes-quote {
@@ -192,11 +195,25 @@ section {
     color: var(--White);
     padding: 2rem;
     border-radius: .3rem;
+    gap: 1rem;
 }
 
 .middle-container__quotes-quote img {
-    width: 1.8rem;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
+}
+
+.middle-container__quotes-quote--profile {
+    display: flex;
+    gap: 1rem;
+}
+
+.middle-container__quotes-quote--profile--description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: .4rem 0;
 }
 
 .middle-container__sign-up {
@@ -208,7 +225,7 @@ section {
     text-align: center;
     color: var(--White);
     gap: 1.5rem;
-    padding: 1rem;
+    padding: 2rem;
     border-radius: .4rem;
     position: relative;
     top: 55px;
@@ -248,15 +265,9 @@ section {
 
 .end-container {
     display: flex;
-    justify-content: space-between;
-    margin-top: 5rem;
-    color: var(--White);
+    flex-direction: column;
+    gap: 1rem;
     padding: 5rem;
-}
-
-.end-container li {
-    list-style: none;
-    padding: .5rem;
 }
 
 .end-container a {
@@ -296,3 +307,27 @@ section {
     display: flex;
     gap: 1rem;
 }
+
+.end-container__links {
+    width: 25%;
+}
+
+.end-container__links ul {
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.end-container__links li {
+    list-style: none;
+    line-height: 2rem;
+    padding: 0 2rem;
+}
+
+.end-container__items {
+    display: flex;
+    justify-content: space-between;
+    color: var(--White);
+}
+
